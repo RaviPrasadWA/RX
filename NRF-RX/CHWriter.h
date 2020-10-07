@@ -16,14 +16,8 @@ Wire.write((byte *) &value, sizeof (value));
 return sizeof (value);
 }  // end of I2C_writeAnything
 
-void initialize_channel_data(){
-  for(INDEX = 0; INDEX < CHANNEL_COUNT; INDEX++)
-    CHANNELS[INDEX] = 0;
-}
-
 void setup_i2c_master(){
   Wire.begin();
-  //initialize_channel_data();
 }
 
 void write_channels(){

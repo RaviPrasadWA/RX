@@ -8,7 +8,7 @@ volatile boolean  haveData                = false;
 void setup()
 {
   Wire.begin (MY_ADDRESS);
-//  Serial.begin (115200);
+  Serial.begin (115200);
   setup_outputs();
   Wire.onReceive (receiveEvent);
 }  // end of setup

@@ -22,7 +22,9 @@ void setup(){
   setup_timer();
   Serial.println("Initializing Timer DONE");
 
+  Serial.println("Initializing I2C channel writer");
   setup_i2c_master();
+  Serial.println("Initializing I2C channel writer DONE");
   
 }
 

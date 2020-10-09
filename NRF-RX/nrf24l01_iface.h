@@ -4,7 +4,7 @@
 #include "RF24.h"
 #include "printf.h"
 
-RF24 radio(6,7); // CE, CSN
+RF24 radio(8,7); // CE, CSN
 
 const uint64_t pipes[2] = { 0xABCDABCD71LL, 
                             0x544d52687CLL };  // Address of PTX and PRX

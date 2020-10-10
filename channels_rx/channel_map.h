@@ -2,14 +2,14 @@
 
 #define CHANNEL_COUNT 8
 
-#define CHANNEL_1   8
-#define CHANNEL_2   9
-#define CHANNEL_3   4
-#define CHANNEL_4   7
-#define CHANNEL_5   9
-#define CHANNEL_6   10
-#define CHANNEL_7   11
-#define CHANNEL_8   12
+#define CHANNEL_1   A0
+#define CHANNEL_2   A1
+#define CHANNEL_3   A2
+#define CHANNEL_4   A3
+#define CHANNEL_5   4
+#define CHANNEL_6   7
+#define CHANNEL_7   8
+#define CHANNEL_8   9
 
 #define BASE_SPEED  200   // max speed = 255
 
@@ -55,5 +55,10 @@ void write_channel_data(uint8_t angle, uint8_t channel_number)
 
 void write_all_channel_data(){
   for( write_iter=0 ; write_iter<CHANNEL_COUNT ; write_iter++)
+  {
+        Serial.print(CHANNELS[write_iter]);
+        Serial.print(" | ");
         write_channel_data(CHANNELS[write_iter],write_iter);
+  }
+  Serial.println("");
 }

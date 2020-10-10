@@ -390,7 +390,7 @@ U 1 1 5F8B1B6D
 P 3300 6400
 F 0 "J1" H 3328 6376 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 3328 6285 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3300 6400 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3300 6400 50  0001 C CNN
 F 3 "~" H 3300 6400 50  0001 C CNN
 	1    3300 6400
 	1    0    0    -1  
@@ -401,7 +401,7 @@ U 1 1 5F8B35D8
 P 3450 6400
 F 0 "J2" H 3478 6376 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 3478 6285 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3450 6400 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 6400 50  0001 C CNN
 F 3 "~" H 3450 6400 50  0001 C CNN
 	1    3450 6400
 	-1   0    0    -1  

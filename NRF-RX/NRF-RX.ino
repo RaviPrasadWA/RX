@@ -32,8 +32,8 @@ void setup(){
 void loop(){
   start_50hz = micros(); 
   
-  perform_hop();
   get_data_nrf();
+  perform_hop();
   
   /* 20ms ~ 50Hz */
   if( start_50hz - last_50hz >= 20000UL )

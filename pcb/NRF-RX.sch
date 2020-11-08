@@ -14,24 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR0101
-U 1 1 5F56AD00
-P 3450 2150
-F 0 "#PWR0101" H 3450 2000 50  0001 C CNN
-F 1 "+5V" H 3465 2323 50  0000 C CNN
-F 2 "" H 3450 2150 50  0001 C CNN
-F 3 "" H 3450 2150 50  0001 C CNN
-	1    3450 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 2200 3450 2150
-Wire Wire Line
-	3450 2150 3550 2150
-Wire Wire Line
-	3550 2150 3550 2200
-Connection ~ 3450 2150
-$Comp
 L power:GND #PWR0102
 U 1 1 5F575500
 P 3450 5300
@@ -44,35 +26,6 @@ F 3 "" H 3450 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 5300 3450 5200
-$Comp
-L MCU_Microchip_ATmega:ATmega328-AU U2
-U 1 1 5F7E3B6B
-P 6800 3550
-F 0 "U2" H 6800 1961 50  0000 C CNN
-F 1 "ATmega328-AU" H 6800 1870 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 6800 3550 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 6800 3550 50  0001 C CNN
-	1    6800 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0103
-U 1 1 5F7E3B71
-P 6800 2000
-F 0 "#PWR0103" H 6800 1850 50  0001 C CNN
-F 1 "+5V" H 6815 2173 50  0000 C CNN
-F 2 "" H 6800 2000 50  0001 C CNN
-F 3 "" H 6800 2000 50  0001 C CNN
-	1    6800 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 2050 6800 2000
-Wire Wire Line
-	6800 2000 6900 2000
-Wire Wire Line
-	6900 2000 6900 2050
-Connection ~ 6800 2000
 $Comp
 L power:GND #PWR0104
 U 1 1 5F7E3B7B
@@ -197,8 +150,6 @@ F 3 "" H 8050 3150 50  0001 C CNN
 $EndComp
 Connection ~ 8050 3150
 Wire Wire Line
-	7400 2950 7550 2950
-Wire Wire Line
 	7550 2950 7550 2850
 Wire Wire Line
 	7400 3050 7550 3050
@@ -241,29 +192,9 @@ Connection ~ 5750 5350
 Wire Wire Line
 	5750 5350 7600 5350
 Wire Wire Line
-	5100 5800 5400 5800
-Wire Wire Line
 	5750 5800 5750 5650
-$Comp
-L power:+5V #PWR0109
-U 1 1 5F822335
-P 5400 5800
-F 0 "#PWR0109" H 5400 5650 50  0001 C CNN
-F 1 "+5V" H 5415 5973 50  0000 C CNN
-F 2 "" H 5400 5800 50  0001 C CNN
-F 3 "" H 5400 5800 50  0001 C CNN
-	1    5400 5800
-	-1   0    0    1   
-$EndComp
-Connection ~ 5400 5800
-Wire Wire Line
-	5400 5800 5750 5800
 Wire Wire Line
 	7600 5350 7600 3650
-Wire Wire Line
-	7600 3650 7400 3650
-Wire Wire Line
-	7400 3750 7750 3750
 Wire Wire Line
 	7750 3750 7750 5500
 $Comp
@@ -295,18 +226,6 @@ F 3 "" H 2600 7050 50  0001 C CNN
 	1    2600 7050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 5F8735EA
-P 2150 6750
-F 0 "#PWR0106" H 2150 6600 50  0001 C CNN
-F 1 "+5V" H 2165 6923 50  0000 C CNN
-F 2 "" H 2150 6750 50  0001 C CNN
-F 3 "" H 2150 6750 50  0001 C CNN
-	1    2150 6750
-	1    0    0    -1  
-$EndComp
-Connection ~ 2150 6750
 $Comp
 L power:GND #PWR0110
 U 1 1 5F87625F
@@ -631,17 +550,6 @@ F 3 "" H 9050 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0120
-U 1 1 5F889936
-P 9050 1400
-F 0 "#PWR0120" H 9050 1250 50  0001 C CNN
-F 1 "+5V" V 9065 1528 50  0000 L CNN
-F 2 "" H 9050 1400 50  0001 C CNN
-F 3 "" H 9050 1400 50  0001 C CNN
-	1    9050 1400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+5V #PWR0121
 U 1 1 5F88B088
 P 9050 1950
@@ -757,29 +665,19 @@ Connection ~ 8450 1500
 Wire Wire Line
 	8450 1500 8500 1500
 Wire Wire Line
-	7400 3250 8350 3250
-Wire Wire Line
 	8350 1850 9050 1850
-Wire Wire Line
-	7400 3350 8450 3350
 Wire Wire Line
 	8450 3350 8450 2350
 Wire Wire Line
 	8450 2350 9050 2350
 Wire Wire Line
-	7400 3450 8550 3450
-Wire Wire Line
 	8550 3450 8550 2850
 Wire Wire Line
 	8550 2850 9050 2850
 Wire Wire Line
-	7400 3550 8650 3550
-Wire Wire Line
 	8650 3550 8650 3400
 Wire Wire Line
 	8650 3400 9050 3400
-Wire Wire Line
-	7400 4450 8000 4450
 Wire Wire Line
 	7400 4750 8150 4750
 Wire Wire Line
@@ -789,11 +687,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 3250 8350 1850
 Wire Wire Line
-	7400 2350 7600 2350
-Wire Wire Line
 	7600 2350 7600 1750
-Wire Wire Line
-	7600 1750 6100 1750
 Wire Wire Line
 	6100 1750 6100 5650
 Wire Wire Line
@@ -802,8 +696,6 @@ Wire Wire Line
 	7900 5650 7900 5000
 Wire Wire Line
 	7900 5000 9050 5000
-Wire Wire Line
-	7400 2450 7750 2450
 Wire Wire Line
 	7750 2450 7750 1600
 Wire Wire Line
@@ -838,13 +730,9 @@ Wire Wire Line
 Wire Wire Line
 	7400 3850 8150 3850
 Wire Wire Line
-	7400 4050 7950 4050
-Wire Wire Line
 	7950 4050 7950 3950
 Wire Wire Line
 	7950 3950 8150 3950
-Wire Wire Line
-	7400 4150 8050 4150
 Wire Wire Line
 	8050 4150 8050 4050
 Wire Wire Line
@@ -870,4 +758,165 @@ Wire Wire Line
 	4050 4300 4150 4300
 Wire Wire Line
 	4150 4300 4150 4200
+$Comp
+L Regulator_Linear:LM1117-5.0 U4
+U 1 1 5F976E32
+P 2750 1000
+F 0 "U4" H 2750 1242 50  0000 C CNN
+F 1 "LM1117-5.0" H 2750 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2750 1000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2750 1000 50  0001 C CNN
+	1    2750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C7
+U 1 1 5F97C8CA
+P 2350 1150
+F 0 "C7" H 2468 1196 50  0000 L CNN
+F 1 "CP" H 2468 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 2388 1000 50  0001 C CNN
+F 3 "~" H 2350 1150 50  0001 C CNN
+	1    2350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 5F97DA5B
+P 3150 1150
+F 0 "C8" H 3268 1196 50  0000 L CNN
+F 1 "CP" H 3268 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 3188 1000 50  0001 C CNN
+F 3 "~" H 3150 1150 50  0001 C CNN
+	1    3150 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1000 2450 1000
+Wire Wire Line
+	3050 1000 3150 1000
+$Comp
+L power:GND #PWR0101
+U 1 1 5F9944E4
+P 2350 1300
+F 0 "#PWR0101" H 2350 1050 50  0001 C CNN
+F 1 "GND" H 2355 1127 50  0000 C CNN
+F 2 "" H 2350 1300 50  0001 C CNN
+F 3 "" H 2350 1300 50  0001 C CNN
+	1    2350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F994CDC
+P 2750 1300
+F 0 "#PWR0103" H 2750 1050 50  0001 C CNN
+F 1 "GND" H 2755 1127 50  0000 C CNN
+F 2 "" H 2750 1300 50  0001 C CNN
+F 3 "" H 2750 1300 50  0001 C CNN
+	1    2750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5F99548C
+P 3150 1300
+F 0 "#PWR0129" H 3150 1050 50  0001 C CNN
+F 1 "GND" H 3155 1127 50  0000 C CNN
+F 2 "" H 3150 1300 50  0001 C CNN
+F 3 "" H 3150 1300 50  0001 C CNN
+	1    3150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0130
+U 1 1 5F995B13
+P 2350 1000
+F 0 "#PWR0130" H 2350 850 50  0001 C CNN
+F 1 "+5V" H 2365 1173 50  0000 C CNN
+F 2 "" H 2350 1000 50  0001 C CNN
+F 3 "" H 2350 1000 50  0001 C CNN
+	1    2350 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 1000
+Wire Wire Line
+	7600 1750 6100 1750
+Wire Wire Line
+	7400 4450 8000 4450
+Wire Wire Line
+	7400 4150 8050 4150
+Wire Wire Line
+	7400 4050 7950 4050
+Wire Wire Line
+	7400 3750 7750 3750
+Wire Wire Line
+	7600 3650 7400 3650
+Wire Wire Line
+	7400 3550 8650 3550
+Wire Wire Line
+	7400 3450 8550 3450
+Wire Wire Line
+	7400 3350 8450 3350
+Wire Wire Line
+	7400 3250 8350 3250
+Wire Wire Line
+	7400 2950 7550 2950
+Wire Wire Line
+	7400 2450 7750 2450
+Wire Wire Line
+	7400 2350 7600 2350
+$Comp
+L MCU_Microchip_ATmega:ATmega328-AU U2
+U 1 1 5F7E3B6B
+P 6800 3550
+F 0 "U2" H 6800 1961 50  0000 C CNN
+F 1 "ATmega328-AU" H 6800 1870 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 6800 3550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2050 6800 2050
+Wire Wire Line
+	6800 2050 6800 1400
+Wire Wire Line
+	6800 1000 3550 1000
+Connection ~ 6800 2050
+Connection ~ 3150 1000
+Wire Wire Line
+	3450 2200 3550 2200
+Wire Wire Line
+	3550 2200 3550 1000
+Connection ~ 3550 2200
+Connection ~ 3550 1000
+Wire Wire Line
+	3550 1000 3150 1000
+Wire Wire Line
+	3550 1000 3550 700 
+Wire Wire Line
+	3550 700  1850 700 
+Wire Wire Line
+	1850 700  1850 6750
+Wire Wire Line
+	1850 6750 2150 6750
+Connection ~ 2150 6750
+Wire Wire Line
+	5100 5800 5400 5800
+Wire Wire Line
+	5400 5800 5400 7350
+Wire Wire Line
+	5400 7350 1850 7350
+Wire Wire Line
+	1850 7350 1850 6750
+Connection ~ 5400 5800
+Wire Wire Line
+	5400 5800 5750 5800
+Connection ~ 1850 6750
+Wire Wire Line
+	9050 1400 6800 1400
+Connection ~ 6800 1400
+Wire Wire Line
+	6800 1400 6800 1000
 $EndSCHEMATC
